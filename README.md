@@ -9,3 +9,6 @@ Builder - Separate the construction of a complex object from its representation,
 
 Prototype - Design patern where you specify the kinds of objects to create using a prototypical instance, and create new objects by copying/cloning this prototype.
 To implement the pattern, declare an abstract base class that specifies a pure virtual clone() method. Any class that needs a "polymorphic constructor" capability derives itself from the abstract base class, and implements the clone() operation. Examples: java.lang.Object#clone() (the class has to implement java.lang.Cloneable)
+
+Factory method - Creational method returning an implementation of an abstract/interface type without having to specify the exact class. Creation through inheritance.
+Useful when you need a complicated process for constructing the object, when the construction need a dependency that you do not want for the actual class, when you need to construct different objects etc. An alternative to constructors - mostly when constructors aren't expressive enough.
