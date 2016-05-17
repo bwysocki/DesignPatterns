@@ -10,7 +10,7 @@ public class ClientForeignLoanCounter extends ClientAbstractLoanCounter {
 
 	@Override
 	protected Set<Loan> makeClientLoans() {
-		// get loans from othe banks
+		// get loans from other banks
 		return Stream.of(new MonthLoan(new BigDecimal("125000")), new MonthLoan(new BigDecimal("1250")))
 				.collect(Collectors.toCollection(HashSet::new));
 	}
