@@ -1,7 +1,7 @@
 package pl.stalostech.behavioral.command;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * Broker for processing commands
@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class Broker extends Thread {
 
-	private List<ClientCommand> commands = new ArrayList<>();
+	private List<ClientCommand> commands = new CopyOnWriteArrayList<>();
 
 	public void addCommand(ClientCommand command) {
 		commands.add(command);
