@@ -20,3 +20,7 @@ Chain of responsibility - Allows for the decoupling between objects by passing a
 Command - To wrap a command in an object so that it can be stored, passed into methods, and returned like any other object. When you need to issue requests to objects without knowing anything about the operation being requested or the receiver of the request. Create a command object that will passed to execusion to callback objects. Example: java.lang.Runnable, javax.swing.Action
 
 Interpreter This pattern generally describes defining a grammar for that language and using that grammar to interpret statements in that format. A class of problems occurs repeatedly in a well-defined and well-understood domain. If the domain were characterized with a "language", then problems could be easily solved with an interpretation "engine". Examples: java.util.Pattern, java.text.Normalizer, java.text.Format
+
+Mediator - Control tower. An object that encapsulates how a set of objects interact. Used to reduce the number of direct dependencies between classes by introducing a single object that manages message distribution. We want to design reusable components, but dependencies between the potentially reusable pieces demonstrates the "spaghetti code" phenomenon. Create class that mediates between classes (for example producer/consumer) and decouples them. Examples: java.util.Timer, java.util.concurrent.Executor#execute(), java.util.concurrent.ExecutorService#submit(), java.lang.reflect.Method#invoke()
+
+
