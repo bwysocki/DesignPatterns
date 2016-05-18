@@ -27,3 +27,5 @@ Memento - This is a snapshot of an object’s state, so that the object can return
 
 Observer - (publish/subscribe) Used to provide a way for a component to flexibly broadcast messages to interested receivers. A large monolithic design does not scale well as new graphing or monitoring requirements are levied.  Implement “Subject” object that will notify registered “Observer”s about an event. The Subject may "push" information at the Observers, or, the Observers may "pull" the information they need from the Subject. Examples: java.util.EventListener, javax.servlet.http.HttpSessionBindingListener, javax.servlet.http.HttpSessionAttributeListener, javax.faces.event.PhaseListener
 
+State - This allows you easily change an object’s behavior at runtime based on internal state. When a monolithic object's behavior is a function of its state, and it must change its behavior at run-time depending on that state or, an application is characterised by large and numerous case statements that vector flow of control based on the state of the application Examples : java.util.Iterator, javax.faces.lifecycle.LifeCycle#execute()  
+
