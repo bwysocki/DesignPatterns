@@ -44,3 +44,5 @@ Composite - compose objects into tree structure to represent part-whole hierarch
  
 Decorator design pattern which allows behavior to be added to an individual object, either statically or dynamically, without affecting the behavior of other objects from the same class. When inheritance becomes nightmare (many subclasses). The Decorator Pattern attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality. Example : InputStream -> FileInputStream -> BufferetInputStream.
 
+Facade - Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use. There is a need for simplified interface to overall functionality of a complex subsystem. In object behind the interface use internally instances of different independent abstract/interface types. 
+
