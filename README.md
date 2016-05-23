@@ -49,5 +49,5 @@ Facade - Provide a unified interface to a set of interfaces in a subsystem. Faca
 Flyweight - object that minimizes memory use by sharing as much data as possible with other similar objects. You can think of it like object that can be cached.
 Simple repeated representation (new objects) would use an unacceptable amount of memory. Create objects that can be shared with others (no shared state).  Example: Integer and cached values between -128 and 127
 
-
+Proxy - Provides a surrogate or placeholder for another object to control access to it. When extra functionality must be provided to class, for example caching when operations on the real object are resource intensive, or checking preconditions before operations on the real object are invoked. Implement interface of the class that you want to proxy. Wrap methods with custom functionality and invoke real object. Examples: java.lang.reflect.Proxy, java.rmi.* - the whole API actually
 
