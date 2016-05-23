@@ -38,3 +38,8 @@ Visitor - Represent an operation to be performed on elements of an object struct
 
 Adapter - helps two incompatible interfaces to work together. An "off the shelf" component offers compelling functionality that you would like to reuse, but its "view of the world" (interface) is not compatible with the philosophy and architecture of the system currently being developed. It is often used to make existing classes work with others without modifying their source code. Take an instance of different abstract/interface type and return an implementation of own/another abstract/interface type which decorates/overrides the given instance. Examples: java.util.Arrays#asList(), java.io.InputStreamReader(InputStream) (returns a Reader)
 
+Bridge - design pattern that can decouple an abstraction (interface) from its implementation so that the two can vary independently. Can also be thought of as two layers of abstraction. Abstractions and implementations should not be bound at compile time, and should be independently extensible.Create another interface with implementstion(s) (lets call it redefined abstraction) that will delegate/use  target abstraction/implementation. Examples: AWT (It provides an abstraction layer which maps onto the native OS the windowing support.), JDBC
+
+ 
+
+
