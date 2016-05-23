@@ -46,3 +46,8 @@ Decorator design pattern which allows behavior to be added to an individual obje
 
 Facade - Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use. There is a need for simplified interface to overall functionality of a complex subsystem. In object behind the interface use internally instances of different independent abstract/interface types. 
 
+Flyweight - object that minimizes memory use by sharing as much data as possible with other similar objects. You can think of it like object that can be cached.
+Simple repeated representation (new objects) would use an unacceptable amount of memory. Create objects that can be shared with others (no shared state).  Example: Integer and cached values between -128 and 127
+
+
+
