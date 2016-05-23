@@ -40,6 +40,7 @@ Adapter - helps two incompatible interfaces to work together. An "off the shelf"
 
 Bridge - design pattern that can decouple an abstraction (interface) from its implementation so that the two can vary independently. Can also be thought of as two layers of abstraction. Abstractions and implementations should not be bound at compile time, and should be independently extensible.Create another interface with implementstion(s) (lets call it redefined abstraction) that will delegate/use  target abstraction/implementation. Examples: AWT (It provides an abstraction layer which maps onto the native OS the windowing support.), JDBC
 
+Composite - compose objects into tree structure to represent part-whole hierarchies.Composite lets client treat individual objects and compositions of objects uniformly. Composite design pattern treats each node in two ways Composite or leaf. Composite means it can have other objects below it. Leaf means it has no objects below it. When you want to represent part-whole hierachies of objects or you want client to be able to ignore difference between compositions of objects and individual objects. Clients will treat all objects in the composite structure uniformly. Create a tree of objects which root will be called “Component” and will declare interface for  for child (Composite, Leaf) components manipulation.Examples: java.awt.Container#add(Component) (practically all over Swing thus), javax.faces.component.UIComponent#getChildren() (practically all over JSF UI thus)
  
 
 
